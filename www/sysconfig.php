@@ -8,7 +8,7 @@
 	$db = $member = $login = array();
 	
 	// 각종 경로를 지정합니다. 끝에 슬래시('/')는 제외해주세요.
-	define('ANI_PATH', '/home/moework/anidb'); //설치경로
+	define('ANI_PATH', '/home/moework/anidb.kr/www'); //설치경로
 	define('ANI_LAYOUT_PATH', ANI_PATH.'/layout');
 	define('ANI_LAYOUT_MAIN_PATH', ANI_LAYOUT_PATH.'/main');
 	define('ANI_LAYOUT_PUBLIC_PATH', ANI_LAYOUT_PATH.'/public');
