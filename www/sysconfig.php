@@ -12,9 +12,16 @@
 	define('ANI_LAYOUT_PATH', ANI_PATH.'/layout');
 	define('ANI_LAYOUT_MAIN_PATH', ANI_LAYOUT_PATH.'/main');
 	define('ANI_LAYOUT_PUBLIC_PATH', ANI_LAYOUT_PATH.'/public');
+	define('ANI_LIB_PATH', ANI_PATH.'/lib');
 
 	// 각종 웹상 주소 위치를 지정합니다. 끝에 슬래시('/')는 제외해주세요.
 	define('ANI_URL', 'https://anidb.kr'); // 절대주소
 	define('ANI_LAYOUT_URL', ANI_URL.'/layout');
 	define('ANI_LAYOUT_MAIN_URL', ANI_LAYOUT_URL.'/main');
-	define('ANI_LAYOUT_PUBLIC_PATH', ANI_LAYOUT_URL.'/public');
+	define('ANI_LAYOUT_PUBLIC_URL', ANI_LAYOUT_URL.'/public');
+	define('ANI_LIB_URL', ANI_URL.'/lib');
+
+	// 데이터베이스 관련 정보
+	include_once(ANI_LIB_PATH.'/mysqli.database.php'); // MySQLi Database / MySQL Database Loading
+	
+	ob_start();
