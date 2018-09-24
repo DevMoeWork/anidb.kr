@@ -22,6 +22,7 @@
 	define('ANI_LIB_URL', ANI_URL.'/lib');
 
 	// 데이터베이스 관련 정보
+	include_once(ANI_LIB_PATH.'/general.lib.php'); // General Database
 	include_once(ANI_LIB_PATH.'/mysqli.database.php'); // MySQLi Database / MySQL Database Loading
 	
 	ob_start();
