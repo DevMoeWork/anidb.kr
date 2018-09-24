@@ -1,5 +1,5 @@
 <?php
 	include_once('./sysconfig.php');
 	include_once('./head.php');
-	echo "Hello, world!";
+	// 레이아웃
 	include_once('./tail.php');
