@@ -11,7 +11,7 @@
 		preg_replace("/{{#SITE_STYLESHEET#}}/", implode('\n', $process['stylesheet']), $contents, 1);
 		preg_replace("/{{#SITE_JAVASCRIPT#}}/", implode('\n', $process['javascript']), $contents, 1);
 		
-		ob_end_flush();
+		//ob_end_flush();
 	}
 
 	function head_stylesheet($link){
