@@ -5,7 +5,7 @@
 	define('_ANIDB_', true);
 	
 	// 변수 공격 가능성 제거
-	$db = $member = $login = array();
+	$db = $member = $login = $process = array();
 	
 	// 각종 경로를 지정합니다. 끝에 슬래시('/')는 제외해주세요.
 	define('ANI_PATH', '/home/moework/anidb.kr/www'); //설치경로
