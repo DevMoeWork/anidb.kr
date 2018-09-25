@@ -7,9 +7,9 @@
 		$contents = ob_get_contents();
 		
 		// 헤더에 들어갈 문자열 치환
-		preg_replace("/{{#SITE_META_TAG#}}/", implode('\n', $process['metatag']), $contents, 1);
-		preg_replace("/{{#SITE_STYLESHEET#}}/", implode('\n', $process['stylesheet']), $contents, 1);
-		preg_replace("/{{#SITE_JAVASCRIPT#}}/", implode('\n', $process['javascript']), $contents, 1);
+		preg_replace("/\{\{\#SITE_META_TAG\#\}\}/", implode('\n', $process['metatag']), $contents, 1);
+		preg_replace("/\{\{\#SITE_STYLESHEET\#\}\}/", implode('\n', $process['stylesheet']), $contents, 1);
+		preg_replace("/\{\{\#SITE_JAVASCRIPT\#\}\}/", implode('\n', $process['javascript']), $contents, 1);
 		
 		ob_end_clean();
 		
