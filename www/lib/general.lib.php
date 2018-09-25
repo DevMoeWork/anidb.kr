@@ -6,6 +6,8 @@
 		global $process;
 		$contents = ob_get_contents();
 		
+		$process['stylesheet'][] = "dddddd";
+		
 		// 헤더에 들어갈 문자열 치환
 		$contents = preg_replace("/\{\{\#SITE_META_TAG\#\}\}/", implode('\n', $process['metatag']), $contents, 1);
 		$contents = preg_replace("/\{\{\#SITE_STYLESHEET\#\}\}/", implode('\n', $process['stylesheet']), $contents, 1);
