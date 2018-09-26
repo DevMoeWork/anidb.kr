@@ -19,7 +19,7 @@
 	define('ANI_LIB_PATH', ANI_PATH.'/lib');
 
 	// 각종 웹상 주소 위치를 지정합니다. 끝에 슬래시('/')는 제외해주세요.
-	define('ANI_URL', 'https://anidb.kr'); // 절대주소
+	define('ANI_URL', 'http://anidb.kr'); // 절대주소
 	define('ANI_LAYOUT_URL', ANI_URL.'/layout');
 	define('ANI_LAYOUT_SKIN_URL', ANI_LAYOUT_URL.'/default');
 	define('ANI_CSS_URL', ANI_LAYOUT_SKIN_URL.'/asset/css');
