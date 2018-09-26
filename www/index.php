@@ -1,7 +1,7 @@
 <?php
 	include_once('./sysconfig.php');
-	include_once('./head.php');
-	// 레이아웃
-	head_stylesheet("aaaaaa");
+	include_once(ANI_PATH.'/head.php');
+	
+	include_once ANI_LAYOUT_MAIN_PATH.'/layout.php';
 
-	include_once('./tail.php');
+	include_once(ANI_PATH.'/tail.php');
