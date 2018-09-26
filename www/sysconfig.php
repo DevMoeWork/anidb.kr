@@ -5,7 +5,7 @@
 	define('_ANIDB_', true);
 	
 	// 변수 공격 가능성 제거
-	$db = $member = $login = $process = array();
+	$db = $member = $login = $process = $genre = array();
 	
 	// 각종 경로를 지정합니다. 끝에 슬래시('/')는 제외해주세요.
 	define('ANI_PATH', '/home/moework/anidb.kr/www'); //설치경로
@@ -32,5 +32,7 @@
 	// 데이터베이스 관련 정보
 	include_once(ANI_LIB_PATH.'/general.lib.php'); // General Database
 	include_once(ANI_LIB_PATH.'/mysqli.database.php'); // MySQLi Database / MySQL Database Loading
+
+	$genre = array('SF', '공포', '닌자', '드라마', '디스토피아', '로맨스', '로봇', '모험', '뮤지컬', '미스터리', '변신', 'BL', '서부', '서스팬스', '스릴러', '스포츠', '시대극', '액션', '여장', '일상물', '종교', '코미디', '판타지', '학원물', '하렘', '역하렘', '마법소녀', '백합', '음악', '고어', '아동', '성인', '공포');
 	
 	ob_start();
