@@ -10,4 +10,4 @@
 {{#SITE_STYLESHEET#}}
 {{#SITE_JAVASCRIPT#}}
 </head>
-<body>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
