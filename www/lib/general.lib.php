@@ -24,3 +24,7 @@
 		global $process;
 		$process['javascript'][] = $script;
 	}
+	function head_metatag($tag){
+		global $process;
+		$process['metatag'][] = $tag;
+	}
