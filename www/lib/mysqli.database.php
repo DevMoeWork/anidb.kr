@@ -5,9 +5,9 @@
 	function sql_connect(){
 		global $db;
 		if(function_exists('mysqli_connect')){
-			$db['connect'] = mysqli_connect(DB_HOST.':'.DB_PORT, DB_ID, DB_PW, DB_NAME);
+			$db['connect'] = mysqli_connect(DB_HOST.':'.DB_PORT, DB_ID, DB_PW, DB_NAME) or die('MySQLi Error!');
 		}else{
-			$db['connect'] = mysql_connect(DB_HOST.':'.DB_PORT, DB_ID, DB_PW);
+			$db['connect'] = mysql_connect(DB_HOST.':'.DB_PORT, DB_ID, DB_PW) or die('MySQL Error!');;
 			$db['select_db'] = mysql_select_db(DB_NAME, $db['connect']);
 		}
 	}
