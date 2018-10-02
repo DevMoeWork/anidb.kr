@@ -14,7 +14,7 @@
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Anime DB</a>
 	 <?php for($i=0; $i<count($genre); $i++): ?>
 	 <a href="<?php echo ANI_URL; ?>/g/<?php echo rawurlencode($genre[$i]); ?>" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bookmark fa-fw w3-margin-right"></i><?php echo htmlspecialchars($genre[$i]); ?></a>
-	 <?php endif; ?>
+	 <?php endfor; ?>
     <a href="https://moe.work" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>MOEWORK</a>
     <a href="mailto:keffred@moe.work?subject=CONTACT" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
   </div>
